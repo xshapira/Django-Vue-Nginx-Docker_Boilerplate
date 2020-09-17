@@ -268,7 +268,7 @@ tags
 
 ### Project template
 
-mri/media/
+project/media/
 
 .pytest_cache/
 
@@ -277,3 +277,18 @@ mri/media/
 .env
 .envs/*
 !.envs/.local/
+
+.vscode
+
+# Python linter and formatting
+.flake8
+pyproject.toml
+
+env
+**/*.pyc
+**/__pycache__
+*.sqlite3
+
+# Accept these files in the repository
+!.gitignore
+!.travis.yml
