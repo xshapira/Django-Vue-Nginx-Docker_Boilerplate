@@ -1,7 +1,7 @@
 import pytest
 
-from mri.users.models import User
-from mri.users.tests.factories import UserFactory
+from winoutt.users.models import User
+from winoutt.users.tests.factories import UserFactory
 
 
 @pytest.fixture(autouse=True)

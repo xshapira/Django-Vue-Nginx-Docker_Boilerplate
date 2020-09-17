@@ -6,8 +6,8 @@ from pathlib import Path
 import environ
 
 ROOT_DIR = Path(__file__).parents[2]
-# mri/)
-APPS_DIR = ROOT_DIR / "mri"
+# winoutt/)
+APPS_DIR = ROOT_DIR / "winoutt"
 env = environ.Env()
 
 READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
@@ -72,7 +72,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "mri.users.apps.UsersConfig",
+    "winoutt.users.apps.UsersConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -81,7 +81,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "mri.contrib.sites.migrations"}
+MIGRATION_MODULES = {"sites": "winoutt.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -179,7 +179,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "mri.utils.context_processors.settings_context",
+                "winoutt.utils.context_processors.settings_context",
             ],
         },
     }
@@ -282,9 +282,9 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "mri.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "winoutt.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "mri.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "winoutt.users.adapters.SocialAccountAdapter"
 
 
 # Your stuff...

@@ -1,8 +1,8 @@
 import pytest
 from django.test import RequestFactory
 
-from mri.users.models import User
-from mri.users.views import UserRedirectView, UserUpdateView
+from winoutt.users.models import User
+from winoutt.users.views import UserRedirectView, UserUpdateView
 
 pytestmark = pytest.mark.django_db
 

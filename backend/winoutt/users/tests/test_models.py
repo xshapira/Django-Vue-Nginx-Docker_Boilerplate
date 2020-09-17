@@ -1,6 +1,6 @@
 import pytest
 
-from mri.users.models import User
+from winoutt.users.models import User
 
 pytestmark = pytest.mark.django_db
 
