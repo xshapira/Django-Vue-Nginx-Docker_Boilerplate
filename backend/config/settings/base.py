@@ -6,8 +6,8 @@ from pathlib import Path
 import environ
 
 ROOT_DIR = Path(__file__).parents[2]
-# winoutt/)
-APPS_DIR = ROOT_DIR / "winoutt"
+# project/)
+APPS_DIR = ROOT_DIR / "project"
 env = environ.Env()
 
 READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
@@ -72,7 +72,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "winoutt.users.apps.UsersConfig",
+    "project.users.apps.UsersConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -81,7 +81,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "winoutt.contrib.sites.migrations"}
+MIGRATION_MODULES = {"sites": "project.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -179,7 +179,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "winoutt.utils.context_processors.settings_context",
+                "project.utils.context_processors.settings_context",
             ],
         },
     }
@@ -282,9 +282,9 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "winoutt.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "project.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "winoutt.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "project.users.adapters.SocialAccountAdapter"
 
 
 # Your stuff...

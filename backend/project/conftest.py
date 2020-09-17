@@ -1,7 +1,7 @@
 import pytest
 
-from winoutt.users.models import User
-from winoutt.users.tests.factories import UserFactory
+from project.users.models import User
+from project.users.tests.factories import UserFactory
 
 
 @pytest.fixture(autouse=True)

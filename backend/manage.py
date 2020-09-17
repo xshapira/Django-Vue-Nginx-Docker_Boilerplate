@@ -24,8 +24,8 @@ if __name__ == "__main__":
         raise
 
     # This allows easy placement of apps within the interior
-    # winoutt directory.
+    # project directory.
     current_path = Path(__file__).parent.resolve()
-    sys.path.append(str(current_path / "winoutt"))
+    sys.path.append(str(current_path / "project"))
 
     execute_from_command_line(sys.argv)
