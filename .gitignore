@@ -153,7 +153,7 @@ typings/
 
 ### VisualStudioCode template
 .vscode/*
-!.vscode/settings.json
+# !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -278,7 +278,6 @@ project/media/
 .envs/*
 !.envs/.local/
 
-.vscode
 
 # Python linter and formatting
 .flake8
@@ -290,5 +289,5 @@ env
 *.sqlite3
 
 # Accept these files in the repository
-!.gitignore
+# !.gitignore
 !.travis.yml
