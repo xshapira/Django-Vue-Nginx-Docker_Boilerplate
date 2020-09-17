@@ -1,4 +1,4 @@
-MIRARI PROJECT / DOCKER EDITION
+Django | Vue | Nginx | Docker :: Boilerplate (MIRARI PROJECT / DOCKER EDITION)
 =======================
 
 .. image:: https://travis-ci.org/pydanny/cookiecutter-django.svg?branch=master
