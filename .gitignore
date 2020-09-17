@@ -159,7 +159,7 @@ typings/
 # !.vscode/extensions.json
 
 .vscode
-
+.vscode/settings.json
 
 
 
