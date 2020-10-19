@@ -20,10 +20,7 @@
           <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver">
             <div class="kt-grid__item kt-grid__item--middle">
               <h3 class="kt-login__title">Welcome to Metronic!</h3>
-              <h4 class="kt-login__subtitle">
-                The ultimate Bootstrap &amp; Angular 6 admin theme framework for
-                next generation web apps.
-              </h4>
+              <h4 class="kt-login__subtitle">Welcome admin</h4>
             </div>
           </div>
           <div class="kt-grid__item">
@@ -55,21 +52,21 @@
 
 <!-- Load login custom page styles -->
 <style lang="scss">
-@import "@/assets/sass/pages/login/login-1.scss";
+@import '@/assets/sass/pages/login/login-1.scss';
 </style>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex';
 
 export default {
-  name: "auth",
+  name: 'auth',
   methods: {},
   computed: {
     ...mapState({
-      errors: state => state.auth.errors
+      errors: (state) => state.auth.errors
     }),
     backgroundImage() {
-      return process.env.BASE_URL + "assets/media/bg/bg-4.jpg";
+      return process.env.BASE_URL + 'assets/media/bg/bg-4.jpg';
     }
   }
 };
